@@ -14,7 +14,7 @@ Skills demonstrated:
 
 - Power Query
 - Data cleaning and transformation
-- Data modelling
+- Star schema data modelling
 - DAX
 - Power BI dashboard development
 - Business analysis
