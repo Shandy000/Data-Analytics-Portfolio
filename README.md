@@ -19,7 +19,7 @@ Skills demonstrated:
 - Power BI dashboard development
 - Business analysis
 
-➡️ "View Logistics Project" https://github.com/Shandy000/Junior-Data-Analytics-Portfolio-/new/main?filename=README.md#:~:text=logistic%2D-,delivery,-%2Dreturn%2Danalysis
+⬆️ "View Logistics Project" 
 
 ---
 
@@ -36,7 +36,7 @@ Skills demonstrated:
 - Interactive Power BI dashboards
 - Student performance analysis
 
-➡️ "View University Project" https://github.com/Shandy000/Junior-Data-Analytics-Portfolio-/new/main?filename=README.md#:~:text=University%2DStudent%2D-,Performance,-%2DAnalysis
+⬆️ "View University Project" 
 
 ---
 
