@@ -82,7 +82,7 @@ A star-schema-style data model was created to support analysis across shipments,
 
 The model also includes separate shipment order-date and delivery-date logic to support date-based analysis.
 
-![Logistics Data Model](Documentation/data_model.png)
+![Logistics Data Model](Documentation/data_model.png?raw=true)
 
 ---
 
