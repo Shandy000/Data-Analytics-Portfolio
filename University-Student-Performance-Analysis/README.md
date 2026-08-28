@@ -110,6 +110,8 @@ Dim_Term
 
 The dimension tables have one-to-many relationships with "Fact_Enrolment", allowing the dashboard to analyse enrolment and performance from multiple perspectives.
 
+![Power BI Data Model](Documentation/Data%20Model.png)
+
 ---
 
 ##📐 DAX Measures
@@ -191,6 +193,8 @@ Additional analysis includes:
 
 The page provides management with a quick overview of both academic performance and student engagement.
 
+![University Performance Overview](PowerBI%20Dashboard/Summary%20view.png)
+
 ---
 
 2. Student & Performance Analysis
@@ -208,6 +212,8 @@ The page allows users to investigate:
 Interactive navigation buttons allow users to move between the different performance views.
 
 This page is designed to help identify both high-performing students and students who may require additional academic or attendance support.
+
+![Student Performance Analysis](PowerBI%20Dashboard/Student%20Performance%20Detail.png)
 
 ---
 
