@@ -110,7 +110,7 @@ Dim_Term
 
 The dimension tables have one-to-many relationships with "Fact_Enrolment", allowing the dashboard to analyse enrolment and performance from multiple perspectives.
 
-![Power BI Data Model](Documentation/Data%20Model.png)
+![Power BI Data Model](Documentation/data_model_new.png)
 
 ---
 
