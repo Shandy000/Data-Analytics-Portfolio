@@ -1,71 +1,48 @@
-📊 Junior Data Analytics Portfolio
+# 📊 Data Analytics Portfolio
 
 Welcome to my data analytics portfolio.
 
-This repository contains projects demonstrating my skills in Power BI, Power Query, DAX, SQL, data cleaning, data modelling and dashboard development.
+This repository showcases practical data analytics projects using SQL, Databricks, Power BI, Power Query and DAX to clean, model, analyse and visualise data and answer business questions.
 
-📁 Projects
+## 📁 Projects
 
-📦 Logistics Delivery & Return Analysis
+### 🏥 Healthcare Appointment Analysis
 
-A Power BI project analysing logistics performance, delivery efficiency, shipping costs and product returns.
+End-to-end healthcare analytics project analysing appointment activity, attendance, waiting times, departments, doctors, costs and follow-up activity.
 
-Skills demonstrated:
+**Skills:** SQL, Databricks, JOINs, CTEs, Window Functions, Data Quality Checks, Power BI, DAX
 
-- Power Query
-- Data cleaning and transformation
-- Star schema data modelling
-- DAX
-- Power BI dashboard development
-- Business analysis
-
-⬆️ "View Logistics Project" 
+[View Healthcare Project](PASTE-LINK-HERE)
 
 ---
 
-🎓 University Student Performance Analysis
+### 🚚 Logistics Delivery & Return Analysis
 
-A Power BI project analysing student enrolment, academic performance, attendance and student-level trends.
+Power BI project analysing shipment performance, delivery efficiency, shipping costs, product returns and customer behaviour.
 
-Skills demonstrated:
+**Skills:** Power Query, Data Modelling, Star Schema, DAX, Power BI, Drill-through Analysis
 
-- Power Query
-- Data cleaning and validation
-- Star schema data modelling
-- DAX measures and ranking
-- Interactive Power BI dashboards
-- Student performance analysis
-
-⬆️ "View University Project" 
+[View Logistics Project](PASTE-LINK-HERE)
 
 ---
 
-🗄️ SQL Data Analysis Project
+### 🎓 University Student Performance Analysis
 
-A SQL project demonstrating the use of queries to explore, clean and analyse structured data and answer practical business questions.
+Power BI project analysing student enrolment, academic performance and student-level trends.
 
-Skills demonstrated:
+**Skills:** Power Query, Data Modelling, DAX, Power BI, Interactive Dashboards
 
-- SQL querying
-- Data exploration
-- Filtering and sorting
-- Joins
-- Aggregations
-- GROUP BY
-- CASE statements
-- Subqueries / CTEs
-- Data analysis and insight generation
-
-➡️ SQL project coming soon
+[View University Project](PASTE-LINK-HERE)
 
 ---
 
-🛠️ Skills & Tools
+## 🛠 Skills & Tools
 
+- SQL
+- Databricks
 - Power BI
 - Power Query
 - DAX
-- SQL
 - Excel
 - Data Cleaning
 - Data Modelling
@@ -75,6 +52,6 @@ Skills demonstrated:
 
 ---
 
-🎯 Portfolio Focus
+## 🎯 Portfolio Focus
 
-I am building this portfolio to demonstrate practical data analytics skills through end-to-end projects, from preparing and analysing raw data through to data modelling, SQL analysis, interactive dashboards and answering business questions.
+This portfolio demonstrates practical data analytics skills through end-to-end projects, from data preparation and modelling to analysis, visualisation and business insight generation.
