@@ -12,7 +12,7 @@ End-to-end healthcare analytics project analysing appointment activity, attendan
 
 **Skills:** SQL, Databricks, JOINs, CTEs, Window Functions, Data Quality Checks, Power BI, DAX
 
-[View Healthcare Project](Healthcare-Appointment-Analysis)
+[View Healthcare Project](https://github.com/Shandy000/Data-Analytics-Portfolio/tree/main/healthcare-appointment-analysis)
 
 ---
 
@@ -22,7 +22,7 @@ Power BI project analysing shipment performance, delivery efficiency, shipping c
 
 **Skills:** Power Query, Data Modelling, Star Schema, DAX, Power BI, Drill-through Analysis
 
-[View Logistics Project](logistic-delivery-return-analysis)
+[View Logistics Project](https://github.com/Shandy000/Data-Analytics-Portfolio/tree/main/logistic-delivery-return-analysis)
 
 ---
 
@@ -32,7 +32,7 @@ Power BI project analysing student enrolment, academic performance and student-l
 
 **Skills:** Power Query, Data Modelling, DAX, Power BI, Interactive Dashboards
 
-[View University Project](University-Student-Performance-Analysis)
+[View University Project](https://github.com/Shandy000/Data-Analytics-Portfolio/tree/main/University-Student-Performance-Analysis)
 
 ---
 
