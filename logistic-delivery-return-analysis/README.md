@@ -1,4 +1,4 @@
-# Logistics, Delivery & Return Analysis
+# 🚚 Logistics, Delivery & Return Analysis
 
 ## 📊 Power BI Portfolio Project
 
@@ -12,7 +12,7 @@ The project demonstrates the complete data analytics workflow:
 
 ## 🎯 Business Objective
 
-The objective of this project was to create an interactive logistics performance dashboard that helps stakeholders understand:
+The objective of this project was to analyse logistics and delivery operations and identify patterns across:
 
 - Overall shipment performance
 - Shipment volume and shipping costs
@@ -26,58 +26,51 @@ The dashboard was designed from a stakeholder perspective, focusing on actionabl
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠 Tools & Technologies
 
 - Microsoft Power BI
 - Power Query
 - DAX
 - Data Modelling
+- Star Schema Design
 - Data Visualisation
-- Star Schema
 - GitHub
 
 ---
 
-# 🔄 Data Analytics Process
+## 🔄 Data Analytics Process
 
-## 1. Data Cleaning — Power Query
+### 1. Data Cleaning — Power Query
 
-The dataset was imported into Power BI and prepared using Power Query.
+The dataset was imported into Power BI and prepared using Power Query before modelling and analysis.
 
-Key preparation activities included:
+Key preparation steps included:
 
-- Checked data types across tables
-- Reviewed column names and data structure
+- Validated data types across all tables
+- Reviewed and standardised column names and table structures
 - Promoted headers where required
-- Checked data quality and consistency
-- Reviewed date and numeric fields
-- Prepared tables for data modelling
+- Checked for data quality and consistency issues
+- Validated date and numeric fields
+- Prepared fact and dimension tables for relational modelling
 
-After completing the cleaning and transformation process, the queries were applied to Power BI for modelling and analysis.
+After preparation, the cleaned tables were loaded into the Power BI data model for analysis.
 
----
+### 2. Data Modelling
 
-## 2. Data Modelling
+A star-schema-style data model was created to support analysis across shipments, returns, customers, products, warehouses and drivers.
 
-A star-schema-style data model was created using dimension and fact tables.
-
-### Dimension Tables
-
+**Dimension Tables**
 - Dim_Customer
 - Dim_Product
 - Dim_Warehouse
 - Dim_Driver
 - Dim_Date
 
-### Fact Tables
-
+**Fact Tables**
 - Fact_Shipment
 - Fact_Return
 
-The model uses relationships between dimension tables and fact tables to allow consistent filtering and analysis across the report.
-
-Key relationships include:
-
+**Key Relationships**
 - Customer → Shipment
 - Customer → Return
 - Product → Shipment
@@ -89,145 +82,183 @@ Key relationships include:
 
 The model also includes separate shipment order-date and delivery-date logic to support date-based analysis.
 
----
-# 🧮 DAX & Measures
-
-DAX measures were created to calculate key operational and business metrics.
+![Logistics Data Model](Documentation/data_model.png)
 
 ---
-📈 Dashboard Pages 
 
-1. Executive Overview
+## 🧮 DAX & Measures
 
-Provides a high-level summary of logistics performance.
+Reusable DAX measures were created to calculate key logistics, delivery, return and customer performance metrics.
 
-Key metrics include:
+Key measures included:
 
-Total Shipments
-Units Shipped
-Shipping Cost
-On-Time Delivery %
-Total Returns
-Return Rate
+- Total Shipments
+- Units Shipped
+- Total Shipping Cost
+- Average Shipping Cost
+- On-Time Delivery %
+- Late Shipments
+- Average Distance Miles
+- Total Returns
+- Returned Units
+- Return Rate
+- Total Refund Amount
+- Average Refund Amount
+- Total Customers
+- Total Products
 
-Visuals include shipment trends, warehouse performance, return categories and operational comparisons.
+These measures were used across KPI cards, charts, tables and drill-through analysis to provide consistent calculations throughout the report.
 
-2. Delivery & Logistics Performance
+📄 [View DAX Measures](DAX/measures.md)
 
-Focuses on delivery efficiency and logistics operations.
+---
 
-Analysis includes:
+## 📈 Dashboard Pages
 
-On-Time Delivery %
-Late Shipments
-Average Shipping Cost
-Average Distance
-Warehouse delivery performance
-Driver performance
-Shipping Cost vs Distance
-Shipment Volume vs Shipping Cost
+The Power BI report contains five interactive pages covering executive KPIs, delivery operations, returns, customer performance and transaction-level detail.
 
-3. Returns & Product Performance
+### 1. Executive Overview
 
-Analyses product returns and their financial impact.
+Provides a high-level view of overall logistics performance.
 
-Key areas include:
+![Executive Overview](PowerBI%20Dashboard/Executive%20Overview.png)
 
-Total Returns
-Returned Quantity
-Return Rate
-Refund Amount
-Average Refund Amount
-Return Reasons
-Product categories with highest returns
-Top products by returned quantity
-Return trends over time
+**Key KPIs**
+- 130 total shipments
+- 856 units shipped
+- £6.6K total shipping cost
+- 87.7% on-time delivery
+- 34 returns
+- 7.6% return rate
 
-4. Customer & Operational Deep Dive
+**Key Findings**
+- The majority of shipments were delivered on time, although 12.3% were not.
+- Shipment activity was highest in February before declining in the following months.
+- Shipment volume was relatively balanced across warehouses.
+- Home recorded the highest number of returns among the product categories shown.
 
-Provides a more detailed view of customer activity.
+---
 
-Analysis includes:
+### 2. Delivery & Logistics Performance
 
-Top customers by shipment volume
-Customers with highest returned quantities
-Customer performance comparison
-Shipment activity
-Return behaviour
-Customer-level performance metrics
+Focuses on delivery efficiency, shipping costs, warehouses, drivers and delivery distance.
 
-Conditional formatting was used to help identify stronger and weaker performance.
+![Delivery and Logistics Performance](PowerBI%20Dashboard/Delivery%20%26%20logistics%20performance.png)
 
-5. Customer Detail
+**Key Findings**
+- Overall on-time delivery was 87.7%, with 16 late shipments.
+- Average delivery distance was approximately 208.3 miles.
+- Delivery distance and shipping cost showed a strong positive relationship, with longer-distance shipments generally costing more.
+- On-time delivery performance varied between drivers.
+- Total shipping cost was distributed fairly evenly across the three warehouses.
 
-A drill-through page providing detailed information for an individual customer.
+---
 
-The page combines:
+### 3. Returns & Product Performance
 
-Customer information
-Shipment details
-Delivery performance
-Return information
-Returned quantities
-Return reasons
-Refund amounts
+Analyses product returns, refund impact and return reasons.
 
-This allows stakeholders to move from high-level customer performance to the underlying transaction-level details.
+![Returns and Product Performance](PowerBI%20Dashboard/Returns%20%26%20product%20performance.png)
 
-📊 Power BI Features Demonstrated
+**Key KPIs**
+- 34 total returns
+- 65 returned units
+- Approximately £3.4K in refunds
+- 7.6% overall return rate
 
-This project demonstrates practical use of:
+**Key Findings**
+- Wrong Item was the most frequent return reason, accounting for 11 returns.
+- Late Delivery was the second-largest return reason with 7 returns.
+- Home recorded the highest returned-unit volume among product categories, with 23 units.
+- Electric Kettle had the highest returned quantity among individual products, with 11 units.
+- Return activity was highest during February and March.
 
-Power Query
-Data cleaning
-Data modelling
-Star schema
-Relationships
-DAX measures
-KPI cards
-Line charts
-Bar charts
-Column charts
-Donut charts
-Scatter charts
-Tables and matrices
-Conditional formatting
-Slicers
-Page navigation
-Drill-through analysis
+---
 
-💡 Key Analytical Questions
+### 4. Customer & Operational Deep Dive
 
-The dashboard was designed to answer questions such as:
+Provides customer-level analysis of shipment activity, shipping costs and return behaviour.
 
-How many shipments were processed?
-How many units were shipped?
-What was the total shipping cost?
-What percentage of shipments were delivered on time?
-Which warehouses have the strongest delivery performance?
-Which drivers have the best on-time performance?
-Does shipping cost increase with delivery distance?
-Which product categories generate the most returns?
-What are the main reasons for returns?
-Which products have the highest returned quantities?
-What is the financial impact of refunds?
-Which customers generate the highest shipment volumes?
-Which customers have the highest return activity?
+![Customer and Operational Deep Dive](PowerBI%20Dashboard/Customer%20%26%20operational%20Deep%20Dive.png)
 
-📌 Portfolio Skills Demonstrated
+**Key KPIs**
+- 18 customers
+- Average 6.6 units per shipment
+- Approximately £50.4 average shipping cost
 
-This project demonstrates my ability to:
+**Key Findings**
+- Shipment volume varied across customers.
+- Return rates differed considerably between customers.
+- Customer-level comparisons help identify accounts with unusually high return activity for further investigation.
+- This page allows operational performance to be examined beyond overall company-level KPIs.
 
-Clean and prepare structured datasets
-Build relational data models
-Create reusable DAX measures
-Analyse operational performance
-Compare KPIs across different business dimensions
-Identify trends and performance differences
-Design interactive Power BI dashboards
-Translate business questions into analytical outputs
-Present data clearly for stakeholder decision-making
+---
 
-👩‍💻 Author
-Shandy Su
-Aspiring Data Analyst
+### 5. Customer Detail
+
+A drill-through page provides transaction-level information for individual customers.
+
+![Customer Detail](PowerBI%20Dashboard/Customer%20Detail.png)
+
+The page allows users to move from aggregated customer performance to individual shipment and return records, supporting more detailed investigation of customer behaviour.
+
+---
+
+## ⚡ Power BI Features Demonstrated
+
+- Power Query for data preparation and transformation
+- Star-schema-style data modelling
+- Fact and dimension table relationships
+- DAX measures for operational KPIs
+- KPI cards
+- Line, bar, column, donut and scatter charts
+- Tables and matrices
+- Conditional formatting
+- Interactive slicers
+- Page navigation
+- Drill-through analysis
+
+---
+
+## ❓ Key Analytical Questions
+
+The analysis was designed to answer the following business questions:
+
+- What is the overall shipment volume and shipping cost?
+- What percentage of shipments are delivered on time?
+- How does delivery performance vary across warehouses and drivers?
+- What is the relationship between delivery distance and shipping cost?
+- Which product categories and products generate the most returns?
+- What are the most common reasons for product returns?
+- What is the financial impact of refunds?
+- Which customers generate the highest shipment activity?
+- Which customers show higher levels of return activity?
+
+---
+
+## 💡 Key Business Insights
+
+- **Delivery performance remained strong overall:** 87.7% of shipments were delivered on time, although 16 shipments were late.
+- **Distance is an important logistics cost factor:** longer delivery distances generally corresponded with higher shipping costs.
+- **Driver performance varied:** on-time delivery performance ranged from 82.6% to 100% across the drivers analysed.
+- **Returns were concentrated around specific issues:** Wrong Item was the most frequent return reason, followed by Late Delivery.
+- **Home products generated the highest return volume:** the Home category recorded 23 returned units.
+- **Electric Kettle recorded the highest individual product return quantity:** 11 units were returned.
+- **Returns had a measurable financial impact:** approximately £3.4K was issued in refunds.
+- **Customer return behaviour varied:** customer-level return rates differed considerably, highlighting accounts that may warrant further investigation.
+
+---
+
+## 🎯 Portfolio Skills Demonstrated
+
+- Data cleaning and preparation
+- Data modelling
+- Star schema design
+- DAX measure development
+- KPI design and reporting
+- Logistics and operational analysis
+- Return and customer analysis
+- Data visualisation
+- Dashboard design
+- Drill-through analysis
+- Business insight generation
